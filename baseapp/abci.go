@@ -258,8 +258,8 @@ func (app *BaseApp) CheckTx(req abci.RequestCheckTx) abci.ResponseCheckTx {
 
 func isOracleTx(msgs []sdk.Msg) bool {
 	for _, msg := range msgs {
-		if sdk.MsgTypeURL(msg) == "/terra.oracle.v1beta1.MsgAggregateExchangeRatePrevote" ||
-			sdk.MsgTypeURL(msg) == "/terra.oracle.v1beta1.MsgAggregateExchangeRateVote" {
+		if sdk.MsgTypeURL(msg) == "/iq.oracle.v1beta1.MsgAggregateExchangeRatePrevote" ||
+			sdk.MsgTypeURL(msg) == "/iq.oracle.v1beta1.MsgAggregateExchangeRateVote" {
 			continue
 		} else {
 			return false

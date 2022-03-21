@@ -23,12 +23,12 @@ import (
 func Test_runAddCmdLedgerWithCustomCoinType(t *testing.T) {
 	config := sdk.GetConfig()
 
-	bech32PrefixAccAddr := "terra"
-	bech32PrefixAccPub := "terrapub"
-	bech32PrefixValAddr := "terravaloper"
-	bech32PrefixValPub := "terravaloperpub"
-	bech32PrefixConsAddr := "terravalcons"
-	bech32PrefixConsPub := "terravalconspub"
+	bech32PrefixAccAddr := "iq"
+	bech32PrefixAccPub := "iqpub"
+	bech32PrefixValAddr := "iqvaloper"
+	bech32PrefixValPub := "iqvaloperpub"
+	bech32PrefixConsAddr := "iqvalcons"
+	bech32PrefixConsPub := "iqvalconspub"
 
 	config.SetPurpose(44)
 	config.SetCoinType(330)
